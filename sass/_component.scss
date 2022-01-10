@@ -1,0 +1,134 @@
+.card {
+  display: flex;
+  width: 65vw;
+  height: 55vh;
+  border-radius: 8px;
+  background: $color-primary-card-bg-Dark-desaturated-blue;
+
+  &__description {
+    width: 50%;
+    padding: 6rem;
+  }
+
+  &__heading {
+    font-size: 3rem;
+    color: $color-neutral-main-heading-stats-White;
+  }
+
+  &__primary {
+    color: $color-primary-accent-Soft-violet;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    color: $color-neutral-main-paragraph-Slightly-transparent-white;
+    width: 90%;
+    line-height: 1.6;
+    margin: 2rem 0 5rem 0;
+  }
+
+  &__stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    font-family: $font-display;
+    width: 93%;
+    color: $color-neutral-main-heading-stats-White;
+  }
+
+  &__stats--heading {
+    margin-bottom: 0.3rem;
+  }
+
+  &__stats--text {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: $color-neutral-stats-headings-Slightly-transparent-white;
+  }
+
+  &__image {
+    width: 50%;
+    border-radius: 0 8px 8px 0;
+    background: linear-gradient(
+        to right bottom,
+        rgba($color-primary-accent-Soft-violet-1, 0.5)
+          rgba($color-primary-accent-Soft-violet-2, 0.5)
+      ),
+      url(/img/image-header-desktop.jpg);
+    background-size: cover;
+  }
+}
+
+////////////////////////////////////////////////////////
+// MEDIA QUERIES
+
+@media only screen and (max-width: 1300px) {
+  .card {
+    &__description {
+      padding: 3rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .card {
+    flex-direction: column-reverse;
+    height: 90vh;
+    width: 90vw;
+
+    &__description {
+      width: auto;
+      height: 70%;
+      text-align: center;
+      padding: 3rem;
+    }
+
+    &__text {
+      margin: 2rem 0 3rem 0;
+    }
+
+    &__stats {
+      flex-direction: column;
+    }
+
+    &__stats--detail {
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__image {
+      height: 30%;
+      width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .card {
+    flex-direction: column-reverse;
+    height: 90vh;
+    width: 90vw;
+    &__description {
+      width: auto;
+      height: 70%;
+      text-align: center;
+      padding: 3rem;
+    }
+
+    &__stats {
+      flex-direction: column;
+    }
+
+    &__stats--detail {
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__image {
+      height: 30%;
+      width: 100%;
+    }
+  }
+}
