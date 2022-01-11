@@ -93,8 +93,8 @@ body {
 .card__image {
   width: 50%;
   border-radius: 0 8px 8px 0;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(100, 11, 152, 0.5))), url(/img/image-header-desktop.jpg);
-  background: linear-gradient(to right bottom, rgba(100, 11, 152, 0.5) rgba(145, 11, 229, 0.5)), url(/img/image-header-desktop.jpg);
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(100, 11, 152, 0.5))), url(/images/image-header-desktop.jpg);
+  background: linear-gradient(to right bottom, rgba(100, 11, 152, 0.5) rgba(145, 11, 229, 0.5)), url(/images/image-header-desktop.jpg);
   background-size: cover;
 }
 
