@@ -63,14 +63,6 @@
 ////////////////////////////////////////////////////////
 // MEDIA QUERIES
 
-@media only screen and (max-width: 1300px) {
-  .card {
-    &__description {
-      padding: 3rem;
-    }
-  }
-}
-
 @media only screen and (max-width: 1025px) {
   .card {
     flex-direction: column-reverse;
@@ -90,34 +82,7 @@
 
     &__stats {
       flex-direction: column;
-    }
-
-    &__stats--detail {
-      &:not(:last-child) {
-        margin-bottom: 2rem;
-      }
-    }
-
-    &__image {
-      height: 30%;
-      width: 100%;
-    }
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .card {
-    flex-direction: column-reverse;
-    height: 90vh;
-    width: 90vw;
-    &__description {
-      width: auto;
-      height: 70%;
-      text-align: center;
-      padding: 3rem;
-    }
-
-    &__stats {
-      flex-direction: column;
+      margin-top: -0.5rem;
     }
 
     &__stats--detail {
